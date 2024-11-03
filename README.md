@@ -57,6 +57,9 @@ python your_code.py --hostname <your_localhost> --database <your_database> --use
 ``` bash
 python3 your_code.py --hostname localhost --database my_database --username my_user --password my_password --port 5432 --input my_table --output cleaned_data.csv
 ```
+## License
+This project is licensed under the MIT License.
+
 ## Notes
 This script requires a valid PostgreSQL database connection.
 Control characters are removed from the text, and only cleaned text is exported.
