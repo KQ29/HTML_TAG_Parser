@@ -34,6 +34,7 @@ python your_code.py --hostname <your_localhost> --database <your_database> --use
 
 ## Arguments
 
+```bash
 --hostname: Database host (e.g., localhost)
 --database: Database name
 --username: Username for database access
@@ -41,17 +42,21 @@ python your_code.py --hostname <your_localhost> --database <your_database> --use
 --port: Database port (e.g., 5432 for PostgreSQL)
 --input: Name of the input table in the database
 --output: Path to the output CSV file
-Script Functionality
-Database Connection: Connects to the PostgreSQL database with the specified parameters.
-Data Retrieval: Fetches all rows from the specified table.
-Data Cleaning:
-Uses BeautifulSoup to remove HTML tags.
-Strips control characters and extra spaces.
-Export to CSV: Writes the cleaned data to the specified CSV file.
-Example Command
-bash
-Copy code
+```
+
+## Script Functionality
+- **Database Connection**: Connects to the PostgreSQL database with the specified parameters.
+- **Data Retrieval**: Fetches all rows from the specified table.
+
+## Data Cleaning:
+- Uses BeautifulSoup to remove HTML tags.
+- Strips control characters and extra spaces.
+- Export to CSV: Writes the cleaned data to the specified CSV file.
+
+### Example Command
+``` bash
 python3 your_code.py --hostname localhost --database my_database --username my_user --password my_password --port 5432 --input my_table --output cleaned_data.csv
-Notes
+```
+## Notes
 This script requires a valid PostgreSQL database connection.
 Control characters are removed from the text, and only cleaned text is exported.
